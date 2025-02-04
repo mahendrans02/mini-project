@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <input type="number"
+        id="number"
+        placeholder="Enter a number"
+        style="width: 200px; height: 30px; font-size: 20px; text-align: center;">
+        <br><br>
+        <input type="number"
+        id="number2"
+        placeholder="Enter a number"
+        style="width: 200px; height: 30px; font-size: 20px; text-align: center;">
+        <br><br>
+        
+        <button onClick="Cheaknum()">
+           +
+        </button>
+        <button onClick="Cheaknum1()">
+            -
+         </button>
+         <button onClick="Cheaknum2()">
+            *
+         </button>
+         <button onClick="Cheaknum3()">
+            /
+         </button>
+    </center>
+    
+    <script>
+        function Cheaknum(){
+            var num = document.getElementById("number").value;
+            var num1= document.getElementById("number2").value;
+            var a=Number(num)+Number(num1);
+            document.write(`<h1>Result ${Number(a)}</h1>`);
+        }
+        function Cheaknum1(){
+            var num = document.getElementById("number").value;
+            var num1= document.getElementById("number2").value;
+            var a=Number(num)-Number(num1);
+            document.write(`<h1>Result ${Number(a)}</h1>`);
+        }
+        function Cheaknum2(){
+            var num = document.getElementById("number").value;
+            var num1= document.getElementById("number2").value;
+            var a=Number(num)*Number(num1);
+            document.write(`<h1>Result ${Number(a)}</h1>`);
+        }
+        function Cheaknum3(){
+            var num = document.getElementById("number").value;
+            var num1= document.getElementById("number2").value;
+            var a=Number(num)/Number(num1);
+            document.write(`<h1>Result ${Number(a)}</h1>`);
+        }
+    </script>
+</body>
+</html>
